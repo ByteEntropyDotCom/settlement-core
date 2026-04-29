@@ -1,0 +1,9 @@
+version: '3.8'
+services:
+  settlement-app:
+    build: .
+    container_name: settlement-core
+    ports:
+      - "8084:8084"
+    environment:
+      - SERVER_PORT=8084
