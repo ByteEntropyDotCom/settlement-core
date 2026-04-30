@@ -32,5 +32,12 @@ The project includes a suite of integration tests in SettlementWorkerTest.java c
 1. Happy Path: Correct net amount calculation and status update to SETTLED.
 2. Guard Case: Protection against negative net amounts, ensuring status is updated to FAILED.
 
+## 📊 Logic Flow
+
+1. Poll: Worker finds all ClearingBatch records with status COMPLETED.
+2. Calculate: Net = TotalAmount - TotalFees.
+3. Validate: If Net <= 0, mark batch as FAILED.
+4. Settle: Create Settlement record and update batch status to SETTLED.
+
 ## 📝 License
 This project is licensed under the MIT License.
