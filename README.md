@@ -26,5 +26,11 @@ src/main/java/com/byteentropy/settlement_core/
 └── SettlementCoreApplication.java  # Main entry point
 ```
 
+## 🧪 Testing
+The project includes a suite of integration tests in SettlementWorkerTest.java covering:
+
+1. Happy Path: Correct net amount calculation and status update to SETTLED.
+2. Guard Case: Protection against negative net amounts, ensuring status is updated to FAILED.
+
 ## 📝 License
 This project is licensed under the MIT License.
