@@ -29,8 +29,10 @@ src/main/java/com/byteentropy/settlement_core/
 ## 🧪 Testing
 The project includes a suite of integration tests in SettlementWorkerTest.java covering:
 
-1. Happy Path: Correct net amount calculation and status update to SETTLED.
-2. Guard Case: Protection against negative net amounts, ensuring status is updated to FAILED.
+### 1. Happy Path:
+   Correct net amount calculation and status update to SETTLED.
+### 2. Guard Case:
+   Protection against negative net amounts, ensuring status is updated to FAILED.
 
 ## 📊 Logic Flow
 
